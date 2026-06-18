@@ -1,0 +1,98 @@
+body{
+    display:flex; /*Centrar todos los elementos correctamente*/ 
+    justify-content: center; /*Centrar horizontalmente*/
+    height: 100vh; /*Ocupar toda la altura de la pantalla del usuario*/
+    align-items: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(138, 93, 170, 0.466);
+}
+
+.password-container{
+    background-color: rgb(138, 93, 170);
+    width: 500px; /*Tamaño del contenedor*/
+    padding: 20px; /*Un tipo de margen o contenido al rededor de todo el contenido del contenedor*/
+    border-radius: 10px; /*Redondear esquinas*/
+    box-shadow: 0 4px 8px rgba(138,93,170,.4); /*Sombra al contenedor 
+    [desplazamiento X, desp Y, difuminado, color, inset (hacia dentro- es opcional)]*/
+    margin: 10px; /*margen al rededor del contenedor*/
+}
+
+.password-container h2{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+.input-container{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /*Coloca espacio entre los elementos del contenedor*/
+    align-items: center;
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 4px; /*Espacio entre las letras*/
+}
+
+.input::placeholder{
+    color: rgba(55, 38, 68, 0.452);
+    letter-spacing: 0px;
+}
+
+.fa-copy{
+    cursor: pointer;
+    opacity: .3;
+}
+
+/*Al pasar el cursos cambia el color del icono*/
+.fa-copy:hover{
+    opacity: .7;
+}
+
+.btn{
+    background-color: rgb(55, 38, 68);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/*Cambio de color al pasar el cursor*/
+.btn:hover{
+    background-color: rgb(43, 29, 53);
+}
+
+/*cambio del tamaño del botón al dar click*/
+.btn:active{
+    transform: scale(0.95);
+}
+
+.alert-container{
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(140, 226, 197);
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(109, 180, 157, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+/*Para ocultar la alerta*/
+.active.alert-container{
+    right: -300px;
+}
