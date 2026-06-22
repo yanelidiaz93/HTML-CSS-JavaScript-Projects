@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box; /*el relleno y borde se incluyen solo dentro del alto y ancho especificado del elemento*/
+    margin: 0;
+}
+
+body{
+    background-color: rgba(116, 73, 153, 0.349);
+}
+
+.calculator{
+    background-color: rgba(115, 73, 153, 0.726);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 1px rgba(86, 54, 114, 0.904);
+    box-shadow: 0 2px 5px rgba(80, 68, 92, 0.904);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#result{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(80, 68, 92, 0.904) inset;
+}
+
+.buttons{
+    display: grid; /*cuadricula css, crea el diseño de cuadricula*/
+    grid-template-columns: repeat(4, 1fr); /*organiza en 4 columnas, el 1fr les da el mismo ancho a todas*/
+    grid-gap: 10px; /*agrega espacio entre cada botón*/
+    margin-top: 20px; /*margen superior a todo el contenedor (entre result y bottons)*/
+}
+
+button{
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 5px rgba(80, 68, 92, 0.904);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /*hace que el efecto de cambio de color se vea mpas suave y fluido*/
+}
+
+/*Cambio de color al pasar el cursor por el botón*/
+.number:hover, .decimal:hover{
+    background-color: rgb(86, 55, 112);
+}
+
+.clear{
+    background-color: palevioletred;
+}
+
+.clear:hover{
+    background-color: rgb(175, 85, 115);
+}
+
+.delete{
+    background-color: rgb(145, 73, 160);
+}
+.delete:hover{
+    background-color: rgb(111, 57, 122);
+}
+
+.number, .decimal{
+    background-color: rgb(115, 73, 153);
+}
+
+.operator{
+    background-color: cadetblue;
+}
+
+.operator:hover{
+    background-color: rgb(76, 129, 131);
+}
+
+.equals{
+    background-color: rgb(73, 49, 94);
+    grid-row: span 3; /*el botón abarca 3 filas*/
+}
+
+.equals:hover{
+    background-color: rgb(89, 60, 112);
+}
