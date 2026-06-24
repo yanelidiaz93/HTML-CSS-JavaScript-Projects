@@ -1,0 +1,74 @@
+@import url('https://googleapis.com');
+
+body{
+    display: flex;
+    background-color: #141414;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Apila el título, los perfiles y el botón verticalmente */
+    align-items: center;    /* Centra horizontalmente todo el contenido */
+    gap: 40px;              /* Separa el Título del Perfil, y el Perfil del Botón */
+}
+
+.perfilYaneli{
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Apila la imagen y el texto (span) verticalmente */
+    gap: 15px;
+    cursor: pointer;
+}
+
+.img-1{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: url('img/suga.JPG');
+    background-size: cover; /*Ajusta imagen al contenedor*/
+    background-position: center; /*Centra la foto*/
+    margin: 0;
+    border-radius: 4px;
+    border: 3px solid transparent; /*Borde para interacción con el puntero*/
+    transition: border-color 0.2s;
+}
+
+.perfilYaneli:hover .img-1{
+    border-color:  white;
+}
+
+.perfilYaneli:hover span{
+    color: white;
+}
+
+span{
+    font-size: 1.2rem;
+    color: #808080;
+    transition: color 0.2s;
+}
+
+button{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #808080;
+    padding: 0.5rem 1.5rem;
+    color: #808080;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover{
+    border-color: white;
+    color: white;
+}
