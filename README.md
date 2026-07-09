@@ -16,3 +16,4 @@ Repositorio donde documento mi aprendizaje en Frontend.
 - https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/04-Texto-Animado/index.html
 - https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/05-Contador-Regresivo-New-Year/index.html
 - https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/06-Calculadora-IMC/index.html
+- https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/07-Reloj-En-Tiempo-Real/index.html
