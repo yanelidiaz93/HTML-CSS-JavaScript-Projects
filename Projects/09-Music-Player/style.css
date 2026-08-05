@@ -1,0 +1,94 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(109, 86, 122);
+    font-family: sans-serif;
+}
+
+.player{
+    background-image: url("img/cover.png");
+    text-align: center;
+    width: 600px;
+    height: 870px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 6px 6px 6px rgb(63, 48, 71);
+}
+
+.imagen{
+    position: relative;
+    width: 384px;
+    height: 384px;
+    border: 2px solid rgba(109, 86, 122, 0.555);
+    left: 17%;
+    top: 6%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(109, 86, 122);
+}
+
+.now{
+    margin-top: 80px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#title{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #645070;
+}
+
+#artist{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 2000px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none; /* Quita el diseño por defecto de Chrome*/
+    appearance: none;
+    width: 70%;   
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px; 
+    background: rgb(100, 80, 112); 
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quita el círculo por defecto */
+    appearance: none;
+    margin-top: -6px;         /* Centra el círculo verticalmente sobre la barra */
+    height: 15px;             /* Alto del círculo */
+    width: 15px;              /* Ancho del círculo */
+    border-radius: 50%;       /*Redondo*/
+    background: rgb(100, 80, 112);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); /* Sombra al circulo */
+}
+
+.controls button img{
+    width: 40px;
+    height: 40px;
+}
+
+.volume i img{
+    width: 40px;
+    height: 40px;
+}
+
+.controls button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
