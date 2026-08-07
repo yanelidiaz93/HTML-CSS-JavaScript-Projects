@@ -68,9 +68,21 @@ volumeEle.addEventListener("input", (e) => {
     currentSong.volume = currentVol
 
     if(currentVol === 0) {
-        iconVolume.src = "img/silenciar-volumen.png";
+        iconVolume.src = "img/silenciar-volumen.png"
     } else {
-        iconVolume.src = "img/volume-up.png";
+        iconVolume.src = "img/volume-up.png"
+    }
+})
+
+iconVolume.addEventListener("click", () => {
+    currentSong.muted = !currentSong.muted;
+
+    if (currentSong.muted) {
+        iconVolume.src = "img/silenciar-volumen.png"
+        volumeEle.value = 0
+    } else {
+        iconVolume.src = "img/volume-up.png"
+        volumeEle.value = currentSong.volume
     }
 })
 

@@ -122,4 +122,13 @@ input[type="range"]::-webkit-slider-thumb {
         width: 32px;  /* Íconos un poco más pequeños */
         height: 32px;
     }
+
+    #volume {
+        display: none;
+    }
+
+    .volume i img {
+        width: 40px;
+        height: 40px;
+    }
 }
