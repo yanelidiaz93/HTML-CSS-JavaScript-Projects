@@ -74,6 +74,12 @@
         <a href="https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/07-Reloj-En-Tiempo-Real/index.html">Ver proyecto</a>
       </td>
     </tr>
+    <tr>
+      <td>Reproductor de Música</td>
+      <td>
+        <a href="https://yanelidiaz93.github.io/HTML-CSS-JavaScript-Projects/Projects/09-Music-Player/index.html">Ver proyecto</a>
+      </td>
+    </tr>
   </table>
 </body>
 </html>
